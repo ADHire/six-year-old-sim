@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <title></title>
+</head>
+<body ng-app="myMod">
+  <div class="container" ng-controller="myCtrl">
+    <header><h1>{{heading}}<h1></header>
+      <button class="btn btn-primary btn-lg" ng-click="talk()"> Talk! </button>
+      <div class="list-of-words">
+        <span ng-repeat="element in wordsOnPage track by $index" class="ng-class : {{element.decor}}">{{element.word}}</span>
+      </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

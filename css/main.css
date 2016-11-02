@@ -1,0 +1,30 @@
+.normal {
+	color: black;
+}
+
+.red {
+	color: white;
+	background-color: red;
+}
+.blue {
+	color: white;
+	background-color: blue;
+}
+.green {
+	color: white;
+	background-color: green;
+}
+.yellow {
+	color: white;
+	background-color: yellow;
+}
+.spin {
+    -webkit-animation: spin 5s infinite;
+}
+
+@keyframes spin {
+    from{-webkit-transform: rotate(0deg);
+    }
+    to{-webkit-transform: rotate(360deg);
+    }
+}
