@@ -1,4 +1,4 @@
-var app = angular.module("myMod",[]);
+var app = angular.module("myMod", []);
 
 app.controller("myCtrl", function($scope, $interval) {
 
